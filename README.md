@@ -1,6 +1,9 @@
 # 项目描述
 
-
+## 执行pre-commit
+```bash
+pre-commit install  
+```
 
 ## git配置
 ```bash
@@ -37,10 +40,7 @@ git tag -a 0.1.1
 git push --tags
 ```
 
-## 执行pre-commit
-```bash
-pre-commit install  
-```
+
 
 
 
