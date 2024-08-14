@@ -1,4 +1,48 @@
-# Geektime Rust 语言训练营
+# 项目描述
+
+
+
+## git配置
+```bash
+git status
+
+git add .
+
+git commit -a   #:wq
+```
+
+### 在仓库中建repo，配置项目的访问
+#### 全局
+```bash
+git config --global user.name "Yu'sHome"
+git config --global user.email "464602584@qq.com"
+```
+#### 或者针对项目
+```bash
+git config user.name "Yu'sHome"
+git config user.email "464602584@qq.com"
+```
+#### 提交
+```bash
+git commit -a
+```
+#### 推送
+```bash
+git push
+```
+
+#### tag
+```bash
+git tag -a 0.1.1 
+git push --tags
+```
+
+## 执行pre-commit
+```bash
+pre-commit install  
+```
+
+
 
 ## 环境设置
 
@@ -57,6 +101,11 @@ Cargo deny 是一个 Cargo 插件，可以用于检查依赖的安全性。
 ```bash
 cargo install --locked cargo-deny
 ```
+
+cd ~/.cargo/advisory-db
+git clone https://github.com/rustsec/advisory-db && mv advisory-db github.com-2f857891b7f43c59
+
+--https://github.com/EmbarkStudios/cargo-deny/issues/692
 
 ### 安装 typos
 
